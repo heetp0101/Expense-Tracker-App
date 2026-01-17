@@ -3,7 +3,7 @@ import 'firebase/auth';
 import { message } from "antd";
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore";
-import {db} from './firebase'
+import {db} from '../firebase'
 
 // const firebaseConfig = {
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
