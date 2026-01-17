@@ -3,6 +3,8 @@ import { initializeApp } from "firebase/app";
 import 'firebase/auth';
 import { getAuth } from "firebase/auth";
 import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import {db} from './firebase'
+
 // const firebaseConfig = {
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
 //     authDomain: "expense-tracker-a8a57.firebaseapp.com",
@@ -34,7 +36,7 @@ auth.onAuthStateChanged(function(user){
 })
 
 
-const db = getFirestore(app);
+
 
 const Transactions = async (values) => {
 

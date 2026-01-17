@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import 'firebase/auth';
 import { getAuth } from "firebase/auth";
 import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import {db} from './firebase'
 
 // const firebaseConfig = {
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
@@ -10,7 +11,7 @@ import { collection, getDocs, getFirestore, query, where } from "firebase/firest
 //     projectId: "expense-tracker-a8a57",
 //     storageBucket: "expense-tracker-a8a57.appspot.com",
 //     messagingSenderId: "335618173369",
-//     appId: "1:335618173369:web:38bb527a5f70ccbb71ae68",
+//     appId: "1:335618173369:web:38bb527a5f70ccbb71a  e68",
 //     measurementId: "G-VR4651YZW7"
 // };
 
@@ -20,7 +21,6 @@ let userEmail; let username; let  results=[];
 //Get User ID from Authenticated User
 const auth = getAuth();
 
-const db = getFirestore(app);
 
 
 auth.onAuthStateChanged(function(user){

@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { collection, deleteDoc, doc, getDocs, getFirestore, query, where } from "firebase/firestore";
-
+import {db} from './firebase'
 // const firebaseConfig = {
 //   // Your Firebase configuration
 //   apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
@@ -17,7 +17,7 @@ import { collection, deleteDoc, doc, getDocs, getFirestore, query, where } from 
 
 //const app = initializeApp(firebaseConfig);
 const auth = getAuth();
-const db = getFirestore(app);
+
 
 
   let userId, userEmail;

@@ -3,7 +3,7 @@ import 'firebase/auth';
 import { message } from "antd";
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore";
-
+import {db} from './firebase'
 
 // const firebaseConfig = {
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
@@ -19,7 +19,7 @@ import { addDoc, collection, getDocs, getFirestore, query, where } from "firebas
 //  const app = initializeApp(firebaseConfig);
 
   // Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
+
 
 const loggedinUser = async(email, password, navigate)=>{
 

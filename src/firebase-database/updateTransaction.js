@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { collection, doc, getDocs, getFirestore, query, updateDoc, where } from "firebase/firestore";
+import {db} from './firebase'
 
 // const firebaseConfig = {
 //   // Your Firebase configuration
@@ -16,7 +17,7 @@ import { collection, doc, getDocs, getFirestore, query, updateDoc, where } from 
 
 //const app = initializeApp(firebaseConfig);
 const auth = getAuth();
-const db = getFirestore(app);
+
 
 
   let userId, userEmail;

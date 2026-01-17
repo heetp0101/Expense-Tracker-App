@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
-
+import {db} from './firebase'
 // const firebaseConfig = {
 //     // Your Firebase configuration
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
@@ -17,7 +17,7 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
   
  // const app = initializeApp(firebaseConfig);
   const auth = getAuth();
-  const db = getFirestore(app);
+
   let results=[];
   
 const fetchAfterDeleteTransaction = async(username)=>{

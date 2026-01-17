@@ -2,7 +2,7 @@ import 'firebase/auth';
 // import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
-
+import {db} from './firebase'
 // const firebaseConfig = {
 //     apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
 //     authDomain: "expense-tracker-a8a57.firebaseapp.com",
@@ -17,7 +17,7 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
  // const app = initializeApp(firebaseConfig);
 
   // Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
+
 
 
 const registeredUser = async(name, email, password)=>{
