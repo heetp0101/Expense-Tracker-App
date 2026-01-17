@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { loginUser } from '../auth/Login';
 import '../resources/authentication.css';
+import {auth} from '../firebase'
 function Login() {
 
     const navigate = useNavigate();
@@ -23,7 +24,7 @@ function Login() {
   
  // const app = initializeApp(firebaseConfig);
   
-  const auth = getAuth(app);
+  // const auth = getAuth(app);
 
       const [formValues, setFormValues] = useState({
         name: '',

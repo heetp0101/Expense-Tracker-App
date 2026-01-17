@@ -5,6 +5,7 @@ import 'firebase/auth';
 import { message } from 'antd';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { loggedinUser } from '../firebase-database/login';
+import {db} from '../firebase'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
