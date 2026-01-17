@@ -10,18 +10,20 @@ import Index from './pages/Index';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Test from './pages/Test';
+
+
 function App() {
 
 
   const firebaseConfig = {
-    apiKey: "AIzaSyByA9Jr_gDNp6OkHuSkMhxjTP_x_5SEyGc",
-    authDomain: "expense-tracker-a8a57.firebaseapp.com",
-    databaseURL: "https://expense-tracker-a8a57-default-rtdb.firebaseio.com",
-    projectId: "expense-tracker-a8a57",
-    storageBucket: "expense-tracker-a8a57.appspot.com",
-    messagingSenderId: "335618173369",
-    appId: "1:335618173369:web:38bb527a5f70ccbb71ae68",
-    measurementId: "G-VR4651YZW7"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
